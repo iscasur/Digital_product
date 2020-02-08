@@ -1,0 +1,20 @@
+@media (max-width: 600px) { /* En resoluciones por debajo de los 600px, se activen las reglas contenidas en esta sección. */
+
+  .products{
+    display: inherit;
+    height: auto;
+  }
+  .product{
+    margin-top: auto;
+  }
+  .main_section{
+    padding: 4%;
+  }
+  .caracteristicas,
+  .menciones{
+    display: inherit;
+  }
+  .mencion{
+    margin: 0 auto var(--space);
+  }
+}

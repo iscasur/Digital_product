@@ -1,0 +1,69 @@
+.fadeIn{
+  animation-duration: 4s; /* Duración de la animación */
+  -webkit-animation-duration: 4s;
+  animation-fill-mode: both; /* Se va a cumplir la regla de los keyframes, tanto de ida como de regreso */
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeIn; /* Nombre de la animación */
+  -webkit-animation-name: fadeIn;
+}
+
+/* Hacer animaciones con este método requiere de dos 2 cosas
+1. Clase
+2. Keyframes. Estos llegan un 'identifier' (nombre) asignado en la el atributo 'animation-name' dentro de la clase.
+
+
+*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}
+
+.fadeInDown{
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0); /* Animar elementos del CSS; translate3d le da posición al elemento, el -100% hace que vaya desde arriba hacia abajo */
+    -webkit-transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0%,0)
+    -webkit-transform: translate3d(0,0%,0)
+  }
+}
+
+.fadeInUp{
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+    -webkit-transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0)  /* El -100% hace que vaya desde abajo hacia arriba */
+    -webkit-transform: translate3d(0,0,0)
+  }
+}
